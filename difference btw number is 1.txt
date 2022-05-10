@@ -1,0 +1,15 @@
+n = int(input())
+n = list(str(n))
+n = [int(i) for i in n]
+f = 1
+for i in range(0,len(n)-1):
+    if(abs(n[i]-n[i+1])!=1):
+        f = 0
+        break
+if(f==1):
+    print("CORRECT")
+else:
+    print("NOT CORRECT")
+-------------------------------------------
+23456 - correct
+5286 - not correct

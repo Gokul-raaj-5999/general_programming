@@ -1,0 +1,15 @@
+s = input()
+alb = ""
+spc = ""
+for i in  s:
+    if(i.isalpha()):
+        alb+=i
+    elif( i.isdigit()):
+        pass
+    else:
+        spc+=i
+print(alb+" "+spc)
+________________________________________________________
+input                 -  output
+number@1234password   - numberpassword @
+alph####numeric       - alphnumeric ####
