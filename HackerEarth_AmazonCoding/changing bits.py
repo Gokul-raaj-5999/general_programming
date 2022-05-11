@@ -18,7 +18,9 @@ m = []
 for ii in range(0,len(lst)):
     if(lst[ii]==1):
         lst[ii]=0
-        x = call(lst)
-        m.append(x)
+        m.append(call(lst))
         lst[ii]=1
-print(max(m))
+if(len(m)>0):
+    print(max(m))
+else:
+    print(len(lst))
